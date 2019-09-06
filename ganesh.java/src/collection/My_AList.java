@@ -1,6 +1,8 @@
 package collection;
 
+import java.awt.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -12,13 +14,17 @@ public class My_AList {
 	public static void main(String[] args) {
 		// ArrayList and LinkedList allows duplicates
 		System.out.print("Array List:"); //Insertion order
-		ArrayList<String> ak = new ArrayList<String>();
+		ArrayList<String> ak = new ArrayList();
 		ak.add("Mango");
 		ak.add("apple");
 		ak.add("graphes");
 		ak.add("kiwi");
 		ak.add("orange");
-		System.out.println(ak);
+		System.out.println(ak.get(1));
+		/*String a[] = {"a","b"};
+		ArrayList<String> aa = new ArrayList<String>(Arrays.asList(a));
+		aa.add("c");
+		System.out.println(aa);*/
 		//linkedlist
 		System.out.print("Linked List:");
 		LinkedList<Integer> ll = new LinkedList<Integer>();
@@ -26,7 +32,11 @@ public class My_AList {
 		ll.add(16);
 		ll.add(1);
 		ll.add(0);
-		System.out.println(ll);
+		System.out.println();
+		for(Integer i:ll)
+		{
+			System.out.println(i);
+		}
 		//hash(No Order)
 		System.out.print("Hash Set:");
 		HashSet<String> hs = new HashSet<String>();
